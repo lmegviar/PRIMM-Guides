@@ -1,14 +1,5 @@
 <!DOCTYPE html>
-
-<!-- 
-  Streamlined documents for PRIMM sequences with embedded Repls (read-evaluate-print loops).
-
-  TO DO:
-    [ x ] Implement templating for use with JSON configurations
-    [   ] Consider "unplugged" variations on the Predict and Run steps 
-    [   ] Replit templates for investigate.txt and modifications.txt
-
--->
+<!-- Streamlined documents for PRIMM sequences with embedded Repls (read-evaluate-print loops). -->
 
 <html>
   <head>
@@ -30,7 +21,7 @@
     <script defer src="script.js"></script>
   </head>
   
-  <body id="main">
+  <body>
     <header>
       <nav>
         <ol>
@@ -64,6 +55,7 @@
         <h1>PRIMM Guide</h1>
         <h2>...</h2>
       </div>
+      
       <!-- Predict -->
       <section id="predict">
         <h1>🔮 Predict</h1>
@@ -94,7 +86,7 @@
       <section id="run">
         <h1>⚙️ Run</h1>
         <p>
-          Reflect on how your prediction compares with the actual result.
+          Run the program below and reflect on how your prediction compares with the actual result.
         </p>
         <ul>
           <li>
@@ -109,11 +101,11 @@
         </ul>
         <br>
         <!-- Replit embed of current project -->
-        <div class="repl covered" id="run-repl" onclick="toggleClass('#run-repl', 'covered')">
-          <div>
+        <div class="repl covered" id="run-repl">
+          <div onclick="removeClass('#run-repl', 'covered')">
             <p>
               <span class="icon">» </span>
-              Click here when you've completed the Prediction step above.</p>
+              Click here to see the program once when you've completed the 🔮 <span class="predict">Predict</span> step.</p>
           </div>
           <a href="" target="_blank" class="new-tab"> Open in new tab <span class="icon"> ❐</span></a>
           <iframe loading="lazy" height="800px" src=""></iframe>
@@ -126,7 +118,7 @@
         <!-- Prompt -->
         <ul>
           <li>
-            Choose <em>4</em> of the questions in the <code>investigate.txt</code> file in the <a href="#run-repl">Repl above</a>.
+            Choose <em>4</em> of the questions in the <code>investigate.txt</code> file in the <a href="#run">Repl above</a>.
           </li>
           <li>
             Investigate with a partner or small group and record your answers in the file.
@@ -140,7 +132,7 @@
         <h1>🔧 Modify</h1>
         <ul>
           <li>
-            Choose <em>at least</em> 4 of the modifications in the <code>modifications.txt</code> file in the <a href="#run-repl">Repl from the Run step</a>.
+            Choose <em>at least</em> 4 of the modifications in the <code>modifications.txt</code> file in <a href="#run">the Repl</a> from the ⚙️ <span class="run">Run</span> step.
           </li>
           <li>
               If you have a partner, pair program by trading off driving and navigating with each modification.
@@ -158,7 +150,7 @@
         <p >Your code should:</p>
         <ul>
           <li>
-            be at least as complex as the <a href="#run-repl">program you modified</a> above.
+            be at least as complex as the <a href="#run">program you modified</a> above.
             <br><em>Stuck? Look back at that program as an example.</em>
           </li>
         </ul>

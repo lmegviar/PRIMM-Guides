@@ -1,12 +1,16 @@
 // Load lesson configuration
-let getSnippet = fetch("config.json")
+// Determine which lesson to show based on query param
+const urlParams = new URLSearchParams(window.location.search);
+const folder = urlParams.get('topic') || "example";
+
+let getSnippet = fetch(`${folder}/config.json`)
   .then(function(res) {
     return res.text();
   })
   .then(function(text) {
     let config = JSON.parse(text);
     loadConfig(config);
-    return fetch(config.predict.snippetPath);
+    return fetch(`${folder}/${config.predict.snippetPath}`);
   })
   .then(function(res) {
     return res.text();
@@ -42,22 +46,23 @@ function loadConfig(config) {
   let reqs = config.make.requirements.reverse().forEach((req) => {
     let item = document.createElement("li");
     item.innerHTML = req;
-    makeList.insertBefore(item, makeList.firstChild)
+    makeList.insertBefore(item, makeList.firstChild);
   })
 };
 
 function loadSnippet(snippet) {
   let snippetContainer = document.querySelector("#predict .snippet");
   snippetContainer.innerHTML = snippet;
+  // Update container height to fit code snippet
   // Regex from https://stackoverflow.com/questions/8488729/how-to-count-the-number-of-lines-of-a-string-in-javascript
-  const lineCount = (snippet.match(/\n/g) || '').length + 1   
-  // Padding to include around snippet, in heightUnit
-  const containerPadding = 4;
-  const heightUnit = "em";
-  snippetContainer.style.height = `${lineCount + containerPadding}${heightUnit}`;
+  const lineCount = (snippet.match(/\n/g) || '').length + 1   ;
+  const lineHeight = 1.6;
+  snippetContainer.style.height = `${(lineCount * lineHeight)}em`;
 }
 
-function toggleClass(selector, classname) {
+function removeClass(selector, classname) {
   let el = document.querySelector(selector);
-  el.classList.contains(classname) ? el.classList.remove(classname) : el.classList.add(classname);
+  if (el.classList.contains(classname)) {
+    el.classList.remove(classname);
+  }
 }

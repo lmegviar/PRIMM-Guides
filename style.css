@@ -1,6 +1,7 @@
 /* Colors sourced from https://github.com/mbadolato/iTerm2-Color-Schemes#tomorrow-night */
 
-#main {
+html {
+  /* Variables */
   --primm-red: #dd6568;
   --predict-yellow: #ebce61;
   --run-green: #c5d163;
@@ -17,15 +18,7 @@
   --page-padding-narrow: .5em;
   --box-border-radius: 10px;
   --nav-height: 3em;
-}
-
-body {
-  min-width: 500px;
-  color: var(--alt-white);
-  background: var(--black);
-  padding: var(--page-padding);
-  font-family: 'JetBrains Mono', monospace;
-  font-family: 'Noto Sans', sans-serif;
+  --repl-height: calc(100vh - 4em);
 }
 
 main {
@@ -39,6 +32,14 @@ main {
 }
 
 /* Element targeted styles */
+
+body {  
+  min-width: 500px;
+  color: var(--alt-white);
+  background: var(--black);
+  padding: var(--page-padding);
+  font-family: 'Noto Sans', sans-serif;
+}
 
 a {
   color: var(--investigate-blue);
@@ -88,7 +89,7 @@ nav {
   margin: 0;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   box-shadow: var(--black) 0px 1px 3px;
 }
 
@@ -153,27 +154,32 @@ nav ol li a:first-of-type {
 }
 
 nav ol li:nth-of-type(1) a,
-#predict h1 {
+#predict h1,
+.predict {
   color: var(--predict-yellow);
 }
 
 nav ol li:nth-of-type(2) a,
-#run h1 {
+#run h1,
+.run {
   color: var(--run-green);
 }
 
 nav ol li:nth-of-type(3) a,
-#investigate h1 {
+#investigate h1,
+.investigate {
   color: var(--investigate-blue);
 }
 
 nav ol li:nth-of-type(4) a,
-#modify h1 {
+#modify h1,
+.modify {
   color: var(--modify-purple);
 }
 
 nav ol li:nth-of-type(5) a,
-#make h1 {
+#make h1,
+.make {
   color: var(--make-green);
 }
 
@@ -210,12 +216,12 @@ div.repl {
 div.repl iframe {
   border: none;
   width: 100%;
-  height: calc(100vh - (var(--page-padding) * 2));
+  height: var(--repl-height);
 }
 
 div.repl a.new-tab {
   float: inline-end;
-  padding-inline-end: var(--page-padding-narrow);
+  padding: 2em .5em .5em 1em;
   font-size: .9em;
   text-decoration: none;
 }
@@ -254,6 +260,7 @@ div.repl a.new-tab {
 /* Run Styles */
 
 /* Dismissable cover asking if last step is complete */
+/* To Do - Smoothly scroll to top of Run Repl when revealed */
 #run div.repl.covered > iframe {
   height: 2em;
   opacity: 0;
@@ -261,7 +268,7 @@ div.repl a.new-tab {
 
 #run div.repl:not(.covered) > iframe {
   transition: height 1s, opacity 2s;
-  height: 800px;
+  height: var(--repl-height);
   opacity: 1;
 }
 
@@ -293,6 +300,7 @@ div.repl a.new-tab {
 #run div.repl > div > p {
   padding-left: var(--page-padding);
   color: var(--run-green);
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Modify Styles */
