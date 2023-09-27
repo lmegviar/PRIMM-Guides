@@ -1,0 +1,16 @@
+{
+  "topic": "Intro to HTML",
+  "primmEmbedLink": "https://replit.com/team/web-dev-and-js/Intro-to-HTML-PRIM",
+  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/Intro-to-HTML-Make",
+  "predict": {
+    "fileDisplayName": "index.html",
+    "snippetPath": "snippet.txt"
+  },
+  "make": {
+    "requirements": [
+      "use a variety of elements and utilize their attributes (like “src” for the <img> tag).",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

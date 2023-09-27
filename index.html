@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!-- 
+  Streamlined documents for PRIMM sequences with embedded Repls (read-evaluate-print loops).
+
+  TO DO:
+    [ x ] Implement templating for use with JSON configurations
+    [   ] Consider "unplugged" variations on the Predict and Run steps 
+    [   ] Replit templates for investigate.txt and modifications.txt
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;600;800&family=Noto+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+      rel="stylesheet">
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+  </head>
+  
+  <body id="main">
+    <header>
+      <nav>
+        <ol>
+          <li title="Predict">
+            <a href="#predict">🔮
+              <span class="nav-text">Predict</span>
+            </a>
+          </li>
+          <li title="Run">
+            <a href="#run">⚙️
+              <span class="nav-text">Run</span>
+            </a>
+          </li>
+          <li title="Investigate">
+            <a href="#investigate">🔍
+            <span class="nav-text">Investigate</span></a>
+          </li>
+          <li title="Modify">
+            <a href="#modify">🔧
+            <span class="nav-text">Modify</span></a>
+          </li>
+          <li title="Make">
+            <a href="#make">🎨
+            <span class="nav-text">Make</span></a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div id="topic">
+        <h1>PRIMM Guide</h1>
+        <h2>...</h2>
+      </div>
+      <!-- Predict -->
+      <section id="predict">
+        <h1>🔮 Predict</h1>
+        <!-- Prompt -->
+        <ol>
+          <li>
+            Read through the code in <pre id="file-name">. . .</pre> below.
+            <br><em>What does each line do?</em> 
+          </li>
+          <li>
+            Predict what you think will appear when the code runs. 
+            <br>
+            <em>Try illustrating or writing out the anticpated output in detail.</em>
+          </li>
+        </ol>
+        <textarea class="snippet">
+          <pre>
+            <html>
+              <body>
+                <h1> Test! </h1>
+              </body>
+            </html>
+          </pre>
+        </textarea>
+      </section>    
+  
+      <!-- Run -->
+      <section id="run">
+        <h1>⚙️ Run</h1>
+        <p>
+          Reflect on how your prediction compares with the actual result.
+        </p>
+        <ul>
+          <li>
+            How is it similar to your prediction?
+          </li>
+          <li> 
+            Did anything surprise you? 
+          </li>
+          <li> 
+            Play "spot the difference" - small details matter!
+          </li>
+        </ul>
+        <br>
+        <!-- Replit embed of current project -->
+        <div class="repl covered" id="run-repl" onclick="toggleClass('#run-repl', 'covered')">
+          <div>
+            <p>
+              <span class="icon">» </span>
+              Click here when you've completed the Prediction step above.</p>
+          </div>
+          <a href="" target="_blank" class="new-tab"> Open in new tab <span class="icon"> ❐</span></a>
+          <iframe loading="lazy" height="800px" src=""></iframe>
+        </div>
+      </section>
+      
+      <!-- Investigate -->
+      <section id="investigate">
+        <h1>🔍 Investigate</h1>
+        <!-- Prompt -->
+        <ul>
+          <li>
+            Choose <em>4</em> of the questions in the <code>investigate.txt</code> file in the <a href="#run-repl">Repl above</a>.
+          </li>
+          <li>
+            Investigate with a partner or small group and record your answers in the file.
+            <br>
+            <em><strong>Hint - </strong>try experimenting with changes in the code to help you find your answers.</em>
+          </li>
+      </section>
+  
+      <!-- Modify -->
+      <section id="modify">
+        <h1>🔧 Modify</h1>
+        <ul>
+          <li>
+            Choose <em>at least</em> 4 of the modifications in the <code>modifications.txt</code> file in the <a href="#run-repl">Repl from the Run step</a>.
+          </li>
+          <li>
+              If you have a partner, pair program by trading off driving and navigating with each modification.
+          </li>
+          <li>
+            Add an <code>[ X ]</code> to the checkbox next to the modifications you drive for. 
+          </li>
+        </ul>
+      </section>
+  
+      <!-- Make -->
+      <section id="make">
+        <h1>🎨 Make </h1>
+        <p>Now you'll create your own code in the Repl below!</p>
+        <p >Your code should:</p>
+        <ul>
+          <li>
+            be at least as complex as the <a href="#run-repl">program you modified</a> above.
+            <br><em>Stuck? Look back at that program as an example.</em>
+          </li>
+        </ul>
+        <div class="repl">
+          <a href="" target="_blank" class="new-tab"> Open in new tab <span class="icon"> ❐</span></a>
+          <iframe loading="lazy" src=""></iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <!-- To Do -->
+  </footer>
+</html>

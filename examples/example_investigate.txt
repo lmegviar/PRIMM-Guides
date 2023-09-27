@@ -1,0 +1,21 @@
+--- Write your answers to the questions below next to the ✍️ symbol:
+
+--- (1) In the HTML code, what does the <h1> tag represent and how does it affect the display of the text within it?
+
+✍️
+
+--- (2) How does the HTML code use the src and alt attributes in the <img> tag
+
+✍️
+
+--- (3) If the src attribute of the <img> tag was changed to a different image file, how would this change the output of the HTML code?
+
+✍️
+
+--- (4) If we wanted to add a list of hobbies to our HTML code, what tags would we need to use and how would we structure them within the existing code?
+
+✍️
+
+--- (5) What does the line <title>My First Web Page</title> do and how does it contribute to the resulting web page?
+
+✍️

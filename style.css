@@ -1,0 +1,302 @@
+/* Colors sourced from https://github.com/mbadolato/iTerm2-Color-Schemes#tomorrow-night */
+
+#main {
+  --primm-red: #dd6568;
+  --predict-yellow: #ebce61;
+  --run-green: #c5d163;
+  --investigate-blue: #8fb8e1;
+  --modify-purple: #cfaddf;
+  --make-green: #85cbbf;
+  --white: #ffffff;
+  --black: #000000;
+  --alt-black: #201e1fff;
+  --deeper-black: #171618ff;
+  --alt-white: #feefddff;
+
+  --page-padding: 2em;
+  --page-padding-narrow: .5em;
+  --box-border-radius: 10px;
+  --nav-height: 3em;
+}
+
+body {
+  min-width: 500px;
+  color: var(--alt-white);
+  background: var(--black);
+  padding: var(--page-padding);
+  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+main {
+  margin-top: var(--nav-height);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: var(--page-padding-narrow);
+  }
+}
+
+/* Element targeted styles */
+
+a {
+  color: var(--investigate-blue);
+}
+
+a:visited {
+  color: var(--modify-purple);
+}
+
+a:hover {
+  color: var(--make-green);
+}
+
+em {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+ul {
+  list-style: square;
+}
+
+header {
+  padding-bottom: 1em;
+  min-width: 500px;
+}
+
+#topic,
+section {
+  border-bottom: var(--alt-black) 2px solid;
+}
+
+section {
+  padding: var(--page-padding) 0;
+}
+
+nav {
+  background-color: var(--alt-black);
+  color: var(--white);
+  position: fixed;
+  width: 100vw;
+  height: var(--nav-height);
+  margin: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  box-shadow: var(--black) 0px 1px 3px;
+}
+
+/* Headers */
+
+h1,
+h2,
+h3 {
+  font-family: 'JetBrains Mono', monospace;
+  margin: .5em 0;
+}
+
+h1 {
+  padding-top: var(--page-padding-narrow);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--alt-white);
+}
+
+h1,
+h3 {
+  color: var(--primm-red);
+  letter-spacing: .1em;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+/* Icons */
+
+.icon {
+  font-size: 1.5em;
+}
+
+/* Navigation */
+
+nav ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.8em 1em 0.8em 0;
+  padding: 0;
+}
+
+nav ol li a {
+  padding: 0 .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+nav ol li a:first-of-type {
+  padding-inline-start: 1em;
+}
+
+nav ol li:nth-of-type(1) a,
+#predict h1 {
+  color: var(--predict-yellow);
+}
+
+nav ol li:nth-of-type(2) a,
+#run h1 {
+  color: var(--run-green);
+}
+
+nav ol li:nth-of-type(3) a,
+#investigate h1 {
+  color: var(--investigate-blue);
+}
+
+nav ol li:nth-of-type(4) a,
+#modify h1 {
+  color: var(--modify-purple);
+}
+
+nav ol li:nth-of-type(5) a,
+#make h1 {
+  color: var(--make-green);
+}
+
+@media only screen and (max-width: 600px) {
+  nav ol li .nav-text {
+    display: none;
+  }
+
+  nav ol li {
+    font-size: 1.5em;
+  }
+
+  nav ol {
+    min-width: 360px;
+    margin: .2em 0 0 .5em;
+  }
+}
+
+/* Preformatted Text & Code Display Styles */
+
+pre,
+code {
+  display: inline;
+  font-size: 1.2em;
+  color: var(--predict-yellow);
+}
+
+div.repl {
+  overflow: hidden;
+  border-radius: var(--box-border-radius);
+  width: 100%;
+}
+
+div.repl iframe {
+  border: none;
+  width: 100%;
+  height: calc(100vh - (var(--page-padding) * 2));
+}
+
+div.repl a.new-tab {
+  float: inline-end;
+  padding-inline-end: var(--page-padding-narrow);
+  font-size: .9em;
+  text-decoration: none;
+}
+
+/* Topic Styles */
+
+#topic h1 {d
+  color: var(--primm-red);
+  font-size: 2.2em;
+}
+
+/* Predict Styles */
+
+#predict {
+  --replit-webview-width: 600px;
+}
+
+#predict li {
+  line-height: 1.5;
+  padding-bottom: .5em;
+}
+
+#predict textarea.snippet {
+  width: calc(100% - (var(--page-padding) * 2));
+  height: 400px;
+  background-color: var(--alt-black);
+  border: none;
+  color: var(--white);
+  border-radius: var(--box-border-radius);
+  font-size: 1.2em;
+  padding: 2em;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* Run Styles */
+
+/* Dismissable cover asking if last step is complete */
+#run div.repl.covered > iframe {
+  height: 2em;
+  opacity: 0;
+}
+
+#run div.repl:not(.covered) > iframe {
+  transition: height 1s, opacity 2s;
+  height: 800px;
+  opacity: 1;
+}
+
+#run div.repl > div {
+  width: calc(100% - (var(--page-padding) * 2));
+}
+
+#run div.repl.covered > div {
+  background-color: var(--alt-black);
+  border-radius: var(--box-border-radius);
+  z-index: 2;
+  height: 4.5em;
+  position: absolute;
+  cursor: pointer;
+}
+
+#run div.repl.covered > div:hover {
+  background-color: var(--deeper-black);
+  transition: background-color .5s;
+}
+
+#run div.repl:not(.covered) > div {
+  opacity: 0;
+  height: 0;
+  transition: opacity 1s, height 1s;
+  cursor: unset;
+}
+
+#run div.repl > div > p {
+  padding-left: var(--page-padding);
+  color: var(--run-green);
+}
+
+/* Modify Styles */
+/* *cricket chirp* */
+
+/* Make Styles */
+/* *cricket chirp* */
