@@ -71,6 +71,11 @@ header {
   min-width: 500px;
 }
 
+footer {
+  padding: var(--page-padding);
+  text-align: right;
+}
+
 #topic,
 section {
   border-bottom: var(--alt-black) 2px solid;
