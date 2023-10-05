@@ -34,7 +34,7 @@ main {
 /* Element targeted styles */
 
 body {  
-  min-width: 500px;
+  min-width: 360px;
   color: var(--alt-white);
   background: var(--black);
   padding: var(--page-padding);
@@ -68,7 +68,7 @@ ul {
 
 header {
   padding-bottom: 1em;
-  min-width: 500px;
+  min-width: 360px;
 }
 
 footer {
@@ -82,7 +82,7 @@ section {
 }
 
 section {
-  padding: var(--page-padding) 0;
+  padding: calc(var(--page-padding) * 2) 0;
 }
 
 nav {
@@ -278,16 +278,18 @@ div.repl a.new-tab {
 }
 
 #run div.repl > div {
-  width: calc(100% - (var(--page-padding) * 2));
+  width: 100%;
 }
 
 #run div.repl.covered > div {
   background-color: var(--alt-black);
   border-radius: var(--box-border-radius);
   z-index: 2;
-  height: 4.5em;
-  position: absolute;
   cursor: pointer;
+}
+
+#run .repl.covered a {
+  display: none;
 }
 
 #run div.repl.covered > div:hover {
@@ -303,7 +305,7 @@ div.repl a.new-tab {
 }
 
 #run div.repl > div > p {
-  padding-left: var(--page-padding);
+  padding: var(--page-padding);
   color: var(--run-green);
   font-family: 'JetBrains Mono', monospace;
 }
