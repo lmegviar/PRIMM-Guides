@@ -1,0 +1,33 @@
+# Weather Wardrobe Helper
+
+# Let's imagine we have a magical wardrobe that helps us pick the perfect outfit for the day!
+# It considers temperature, precipitation, and whether it's sunny or cloudy.
+
+print("Welcome to the Weather Wardrobe Helper!")
+
+# Get weather data from the user
+temperature = float(input("Enter the temperature (in degrees Celsius): "))
+precipitation = input("Is it raining? (yes or no): ").lower()
+cloudy = input("Is it cloudy? (yes or no): ").lower()
+
+# Let's make some fashion decisions!
+if temperature >= 30:
+    print("It's scorching hot! You should wear your swimsuit and sunglasses!")
+else:
+    if temperature >= 20:
+        if precipitation == "no" and cloudy == "no":
+            print("It's a beautiful day! Wear shorts and a t-shirt.")
+        elif precipitation == "yes" and cloudy == "no":
+            print("It's raining, but it's warm! Grab your raincoat and rain boots.")
+        else:
+            print("It's a bit cloudy, but not too cold. Wear jeans and a hoodie.")
+    else:
+        if precipitation == "yes":
+            print("Brrr, it's cold and rainy. Bundle up with a warm coat and umbrella.")
+        else:
+            if cloudy == "yes":
+                print("It's a chilly day, but at least it's not raining. Wear a sweater.")
+            else:
+                print("Wow, it's freezing and sunny! Put on your winter coat and sunglasses.")
+
+print("Have a fantastic day, and stay stylish!")

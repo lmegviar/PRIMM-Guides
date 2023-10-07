@@ -1,0 +1,23 @@
+{
+  "topic": "Intro to HTML",
+  "primmEmbedLink": "https://replit.com/team/[web-dev-and-js | python-viar]/[topic]-PRIM",
+  "makeEmbedLink": "https://replit.com/team/[web-dev-and-js | python-viar]/[topic]-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "index.html",
+        "path": "snippet.txt"
+      },
+      {
+        "displayName": "style.css",
+        "path": "style.css"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

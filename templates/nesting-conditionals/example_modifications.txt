@@ -1,0 +1,32 @@
+[] 1. Modify temperature ranges: 
+      Change the temperature thresholds in the program to suggest different outfit options for various temperature ranges (e.g., below freezing, cold, mild, warm, hot).
+
+[] 2. Include Fahrenheit temperature: 
+      Use operators to display Fahrenheit temperatures alongside Celsius. 
+      The formula for converting Fahrenheit to Celsius is C = 5/9(F-32).
+
+[] 3. Introduce season-based outfits: 
+      Extend the program to account for different seasons (e.g., summer, fall, winter, spring) and provide season-specific outfit recommendations.
+
+[] 4. Implement user preferences: 
+      Allow the user to specify their preferred outfit style (e.g., casual, formal, sporty) and adjust the recommendations accordingly.
+
+[] 5. Create a clothing inventory: 
+      Develop a system where the program maintains an inventory of the user's clothing items (e.g., jackets, shirts, pants) and suggests outfits based on what's available in the wardrobe.
+
+[] 6. Incorporate color coordination: 
+      Enhance the program to suggest outfits that match in color or provide fashion tips on color combinations.
+
+[] 7. [Advanced] Weather forecast API integration: 
+      Connect the program to a weather forecast API to fetch real-time weather data, enabling more accurate and up-to-date outfit suggestions.
+
+[] 8. Emoji-based recommendations: 
+      Replace text-based outfit suggestions with emojis to make the program's responses more visually engaging.
+
+[] 9. User feedback and rating: 
+      Allow users to rate the outfit suggestions provided by the program and use their feedback to improve future recommendations.
+
+[]  10. DESIGN YOUR OWN MOD! - Come up with a modification for the program.
+         Write the requirements below and then make your changes in Replit.
+         ✍️ 
+

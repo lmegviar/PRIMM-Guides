@@ -1,0 +1,21 @@
+--- Write your answers to the questions below next to the ✍️ symbol:
+
+--- (1) How do boolean expressions like temperature >= 30 or precipitation == "no" work within the program, and how are they used to evaluate weather conditions?
+
+✍️
+
+--- (2) Can you identify instances where boolean expressions are combined using logical operators (e.g., and, or, not), and how these combinations influence the program's decision-making process?
+
+✍️
+
+--- (3) What role do nested conditional statements play in this program, and how do they help in handling multiple layers of decision-making based on weather data?
+
+✍️
+
+--- (4) If you were to modify the program to include an additional layer of decision-making, where, for example, the user's location (e.g., beach, mountains) influences the outfit choice, how would you implement this using nested conditionals?
+
+✍️
+
+--- (5) How does the program ensure that it considers all possible scenarios for weather, temperature, and user input when providing outfit suggestions? Can you identify any situations where certain conditions might be missed or overlooked?
+
+✍️

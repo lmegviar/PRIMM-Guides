@@ -1,0 +1,21 @@
+{
+  "topic": "Nesting Conditionals",
+  "primmEmbedLink": "https://replit.com/team/python-viar/Nesting-Conditionals-PRIM",
+  "makeEmbedLink": "https://replit.com/team/python-viar/Nesting-Conditionals-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "main.py",
+        "path": "snippet.txt"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "include at least 3 conditionals.",
+      "include conditional nesting at least 3 layers deep.",
+      "use arithmetic operators in boolean expressions",
+      "# contain comments that explain how the code works."
+    ]
+  }
+}

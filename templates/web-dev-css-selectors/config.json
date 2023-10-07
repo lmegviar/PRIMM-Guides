@@ -1,0 +1,27 @@
+{
+  "topic": "CSS Selectors",
+  "primmEmbedLink": "https://replit.com/team/web-dev-and-js/CSS-Selectors-PRIM",
+  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/CSS-Selectors-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "index.html",
+        "path": "snippet.txt"
+      },
+      {
+        "displayName": "style.css",
+        "path": "style.css"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "use element, class, and id selectors.",
+      "use selector chaining.",
+      "use at least one pseudo class.",
+      "include at least one decendent combinator.",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

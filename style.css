@@ -89,7 +89,7 @@ nav {
   background-color: var(--alt-black);
   color: var(--white);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: var(--nav-height);
   margin: 0;
   left: 0;
@@ -225,8 +225,8 @@ div.repl iframe {
 }
 
 div.repl a.new-tab {
-  float: inline-end;
-  padding: 2em .5em .5em 1em;
+  float: right;
+  padding: 2em .5em;
   font-size: .9em;
   text-decoration: none;
 }
@@ -249,17 +249,33 @@ div.repl a.new-tab {
   padding-bottom: .5em;
 }
 
-#predict textarea.snippet {
+#predict ol {
+  padding-bottom: var(--page-padding);
+}
+
+#predict .snippet-container textarea.snippet {
   width: calc(100% - (var(--page-padding) * 2));
   height: 400px;
   background-color: var(--alt-black);
   border: none;
   color: var(--white);
-  border-radius: var(--box-border-radius);
   font-size: 1.2em;
-  padding: 2em;
-  line-height: 1.6;
-  overflow: hidden;
+  padding: var(--page-padding);
+  line-height: 2.5;
+  overflow: scroll;
+  margin-top: 1em;
+}
+
+.snippet-container .snippet-tab {
+  padding: 1.1em 2em;
+  background-color: #201e1f;
+  border-radius: 10px 10px 0 0;
+  color: var(--predict-yellow);
+  font-weight: 600;
+}
+
+.snippet-container {
+  margin-top: var(--page-padding);
 }
 
 /* Run Styles */
@@ -308,6 +324,10 @@ div.repl a.new-tab {
   padding: var(--page-padding);
   color: var(--run-green);
   font-family: 'JetBrains Mono', monospace;
+}
+
+#run div.repl:not(.covered) > div > p {
+  display: none;
 }
 
 /* Modify Styles */

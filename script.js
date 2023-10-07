@@ -1,7 +1,8 @@
-// Load lesson configuration
+/* Load lesson configuration */
+
 // Determine which lesson to show based on query param
 const urlParams = new URLSearchParams(window.location.search);
-const folder = urlParams.get('topic') || "example";
+const folder = `templates/${urlParams.get('topic') || "example"}`;
 
 let getSnippet = fetch(`${folder}/config.json`)
   .then(function(res) {
@@ -10,16 +11,10 @@ let getSnippet = fetch(`${folder}/config.json`)
   .then(function(text) {
     let config = JSON.parse(text);
     loadConfig(config);
-    return fetch(`${folder}/${config.predict.snippetPath}`);
-  })
-  .then(function(res) {
-    return res.text();
-  })
-  .then(function(snippet) {
-    loadSnippet(snippet);
   });
 
 function loadConfig(config) {
+  console.log(`Loading ${config.topic}: `, config);
   // Load embedded Replit environments
   let primmRepl = document.querySelector("#run .repl iframe");
   let makeRepl = document.querySelector("#make .repl iframe");
@@ -31,11 +26,9 @@ function loadConfig(config) {
   let makeAnchor = document.querySelector("#make .repl a");
   primmAnchor.href = config.primmEmbedLink;
   makeAnchor.href = config.makeEmbedLink;
-  
-  // Add Predict file name
-  let fileName = document.querySelector("#file-name");
-  fileName.innerHTML = config.predict.fileDisplayName;
 
+  loadSnippets(config);
+  
   // Add topic
   let topic = document.querySelector("#topic h2");
   topic.innerHTML = config.topic;
@@ -50,14 +43,45 @@ function loadConfig(config) {
   })
 };
 
-function loadSnippet(snippet) {
-  let snippetContainer = document.querySelector("#predict .snippet");
-  snippetContainer.innerHTML = snippet;
+function loadSnippets(config) {
+  // To Do: Make the order of snippets rendered match order in configuration array
+  let snippets = config.predict.snippets;
+  snippets.forEach(function(snippet) {
+    fetch(`${folder}/${snippet.path}`)
+    .then(function(res) {
+      return res.text();
+    })
+    .then(function(snippetText) {
+      loadSnippet(snippet.displayName, snippetText);
+    });
+  })
+};
+
+function loadSnippet(fileName, snippet) {
+  // SNIPPET_LINE_HEIGHT should match line height in #predict textarea.snippet
+  const SNIPPET_LINE_HEIGHT = 2.5;
+  let predictSection = document.querySelector("#predict");
+  // Copy the snippet container template
+  let snippetTemplate = predictSection.querySelector("#snippet-template");
+  /* TO DO: Check for browser compatibility with template elements
+  See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template */
+  let snippetContainer = snippetTemplate.content.cloneNode(true);
+  // Add line numbers to snippet 
+  let lineNumber = 1;
+  snippet = snippet.replace(/^/gm, () => `${lineNumber++}.  `);
+  // Set snippet text
+  let snippetTextArea = snippetContainer.querySelector("textarea");
+  snippetTextArea.innerHTML = snippet;
+  // Set the file name text
+  let snippetTab = snippetContainer.querySelector(".snippet-tab");
+  snippetTab.innerHTML = fileName;
   // Update container height to fit code snippet
   // Regex from https://stackoverflow.com/questions/8488729/how-to-count-the-number-of-lines-of-a-string-in-javascript
   const lineCount = (snippet.match(/\n/g) || '').length + 1   ;
-  const lineHeight = 1.6;
-  snippetContainer.style.height = `${(lineCount * lineHeight)}em`;
+  const lineHeight = SNIPPET_LINE_HEIGHT;
+  snippetTextArea.style.height = `${(lineCount * lineHeight)}em`;
+  //Add snippet element to section
+  predictSection.appendChild(snippetContainer);
 }
 
 function removeClass(selector, classname) {
