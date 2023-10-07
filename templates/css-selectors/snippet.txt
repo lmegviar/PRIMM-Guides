@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selectors Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selector Example</h1>
+
+    <div id="box1" class="box">
+        <p>This is a red box with an ID selector.</p>
+    </div>
+
+    <div class="box blue">
+        <p>This is a blue box with a class selector for a blue box.</p>
+    </div>
+
+    <div class="box green">
+        <p>This is a green box with a class selector for a green box.</p>
+    </div>
+
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <p class="highlight">This is a paragraph with a class selector for highlighting.</p>
+
+    <p>This is a paragraph with a pseudo-class selector for hover effect.</p>
+</body>
+</html>

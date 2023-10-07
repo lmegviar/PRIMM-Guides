@@ -1,0 +1,22 @@
+[] 1. Change the font color of the text within the <h1> tag to purple.
+
+[] 2. Change the border color of the <div> element with the ID box1 to orange.
+
+[] 3. Add a class selector .italic and apply it to the second paragraph to make the text inside it italic.
+
+[] 4. Style the list items (<li>) within the <ul> with an ID selector #list to have a background color of light gray.
+
+[] 5. Change the text color of the links (<a>) inside the <ul> to dark blue.
+
+[] 6. Add a pseudo-class selector to change the background color of the paragraphs with the class .highlight when hovered over to light green.
+
+[] 7. Create a descendant selector to target the first link (<a>) inside the first list item (<li>) and give it a font-weight of bold.
+
+[] 8. Apply a class selector .orange-box and make it style the third <div> element with a background color of orange.
+
+[] 9. Add a class selector .big-link and apply it to the second link (<a>) to increase its font size.
+
+[]  10. DESIGN YOUR OWN MOD! - Come up with a modification for the program.
+         Write the requirements below and then make your changes in Replit.
+         ✍️ 
+

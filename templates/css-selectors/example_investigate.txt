@@ -1,0 +1,29 @@
+// Choose 5 questions to answer:
+
+--- (1) In the CSS code, what does the * (wildcard) selector apply styles to, and how does it affect the text in the document?
+
+✍️
+
+--- (2) How are element selectors used in the CSS, and where are they applied in the HTML document?
+
+✍️
+
+--- (3) What does the box > p selector target, and how does it style the text differently from other paragraphs?
+
+✍️
+
+--- (4) How does the ID selector #box1 affect the styling of the element it selects in the HTML?
+
+✍️
+
+--- (5) Explain how chained class selectors like .box.blue and .green.green work and how they style the HTML elements.
+
+✍️
+
+--- (6) Describe the chained pseudo-class selector p:not(.highlight):hover. Which paragraphs will it target, and what happens when you hover over them?
+
+✍️
+
+--- (7) Will any of the boxes be gray? Why or why not?
+
+✍️

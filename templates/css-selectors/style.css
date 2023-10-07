@@ -1,0 +1,48 @@
+/* Wildcard Selector */
+* {
+  font-family: monospace;
+}
+
+/* Element Selectors */
+div {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* with child selector */
+box > p {
+  font-size: 14px;
+}
+
+/* Class Selector for Box */
+.box {
+  border: 2px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+}
+
+/* ID Selector */
+#box1 {
+  background-color: red;
+}
+
+/* Chained Class Selectors for Blue Box */
+.box.blue {
+  background-color: lightblue;
+}
+
+/* Chained Class Selectors for Green Box */
+.green.green {
+  background-color: lightgreen;
+}
+
+/* Class Selector for Highlighting */
+.highlight {
+  background-color: yellow;
+}
+
+/* Chained Pseudo-class Selectors (not and hover) */
+p:not(.highlight):hover {
+  background-color: pink;
+}
