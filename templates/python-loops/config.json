@@ -1,0 +1,19 @@
+{
+  "topic": "Python Loops",
+  "primmEmbedLink": "https://replit.com/team/python-viar/Loops-PRIM",
+  "makeEmbedLink": "https://replit.com/team/python-viar/Loops-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "main.py",
+        "path": "snippet.txt"
+      },
+    ]
+  },
+  "make": {
+    "requirements": [
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

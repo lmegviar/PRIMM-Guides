@@ -1,0 +1,14 @@
+(1) In the code snippet, the while loop is used to simulate a countdown for a rocket launch. Can you explain how the while loop operates in this context and how it controls the countdown?
+✍️
+
+(2) How does the for loop create the pattern, and what does each asterisk represent?
+✍️
+
+(3) Can you identify any real-world scenarios where you might use a while loop or a for loop like the ones in this code?
+✍️
+
+(4) Explain how the countdown variable changes during each iteration of the while loop.
+✍️
+
+(5) What message is printed when the rocket finally blasts off, and why is it printed only once?
+✍️

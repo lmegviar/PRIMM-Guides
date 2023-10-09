@@ -1,0 +1,16 @@
+# Explore the Magic of Python Loops
+
+# While Loop: Let's count down from a rocket launch!
+countdown = 10
+print("Get ready for liftoff!")
+while countdown > 0:
+    print(f"Countdown: T-{countdown}")
+    countdown -= 1
+print("Blastoff! 🚀")
+
+# For Loop: Print a cool pattern!
+pattern = ["*", "**", "***", "****", "*****"]
+print("\nLet's create a pattern:")
+# Loop through each item in the list named "pattern"
+for item in pattern:
+    print(item)

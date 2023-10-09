@@ -1,0 +1,19 @@
+--- (1) In the HTML code, how is text styled differently within the <p> element with the class emphasis compared to the standard text?
+
+✍️
+
+--- (2) How is the box in the HTML code (inside the article with the title "Box Model") styled using CSS? Explain the properties applied.
+
+✍️
+
+--- (3) What is the purpose of the background-image property in the .bg-image CSS class, and how does it affect the appearance of the div element?
+
+✍️
+
+--- (4) How is the font style of text changed within the <em> elements in the CSS code?
+
+✍️
+
+--- (5) In the HTML code, how is the styling of the <h1> element different from the styling of the <p> elements, and what CSS properties are used to achieve this difference?
+
+✍️

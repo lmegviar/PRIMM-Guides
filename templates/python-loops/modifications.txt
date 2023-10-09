@@ -1,0 +1,21 @@
+[]   1. Change the countdown value to start from 5 instead of 10 and print a different liftoff message.
+
+[]   2. Modify the for loop to create a different pattern, such as a triangle or a square.
+
+[]   3. Add user input so that the user must confirm they are ready to launch before the countdown begins.
+
+[]   4. Use the continue statement inside the for loop to print only even numbers from 1 to 10.
+
+[]   5. Create a new for loop to print a countdown pattern (like 5, 4, 3, 2, 1, Blastoff!).
+
+[]   6. Experiment with changing the pattern list to contain different symbols (e.g., '$', '#', '@').
+
+[]   7. Modify the code to use a while loop to count from 1 to 15 and print only prime numbers.
+
+[]   8. Add an 'else' block to the while loop to print a message after the rocket has blasted off.
+
+[]   9. Create a for loop to print the pattern in reverse order.
+
+[]   10. DESIGN YOUR OWN MOD! - Come up with a modification for the program.
+      Write the requirements below and then make your changes in Python.
+      ✍️

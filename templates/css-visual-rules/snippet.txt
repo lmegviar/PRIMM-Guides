@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Concepts Example</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to CSS Concepts</h1>
+  </header>
+
+  <section class="main-content">
+    <article>
+      <h2>Text Styling</h2>
+      <p>This is a <span class="emphasis">highlighted</span> text with <strong>bold</strong> and <em>italic</em> words.</p>
+    </article>
+
+    <article>
+      <h2>Box Model</h2>
+      <div class="box">
+        <p>This is a box with padding and margin.</p>
+      </div>
+    </article>
+
+    <article>
+      <h2>Background & Image</h2>
+      <div class="bg-image"></div>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 CSS Concepts</p>
+  </footer>
+</body>
+</html>

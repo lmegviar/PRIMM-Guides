@@ -1,0 +1,21 @@
+[] 1. Change the font size of all <p> elements.
+
+[] 2. Experiment with different background colors for the .box class.
+
+[] 3. Add a border to the .box class with a different color and thickness.
+
+[] 4. Replace the background image in the .bg-image class with a different image.
+
+[] 5. Create a new CSS class to change the text color of the <h1> element.
+
+[] 6. Add a new article with a different topic and style its content.
+
+[] 7. Change the alignment of text within the <p> elements.
+
+[] 8. Apply a different font family to the entire page.
+
+[] 9. Add a CSS rule to change the text color of the <strong> elements.
+
+[] 10. DESIGN YOUR OWN MOD! - Come up with a modification for the program. 
+    Write the requirements below and then make your changes in Replit. 
+    ✍️

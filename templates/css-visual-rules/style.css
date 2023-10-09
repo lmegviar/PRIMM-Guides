@@ -1,0 +1,39 @@
+/* CSS declarations */
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.emphasis {
+  color: red;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.box {
+  background-color: lightblue;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.bg-image {
+  /* Image from https://unsplash.com/photos/pE8WW245aik */
+  background-image: url("moon.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  margin: 20px auto;
+}
