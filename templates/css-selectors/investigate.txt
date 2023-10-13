@@ -8,7 +8,7 @@
 
 ✍️
 
---- (3) What does the box > p selector target, and how does it style the text differently from other paragraphs?
+--- (3) What does the .box > p selector target, and how does it style the text differently from other paragraphs?
 
 ✍️
 

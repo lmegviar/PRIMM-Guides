@@ -215,7 +215,8 @@ code {
 div.repl {
   overflow: hidden;
   border-radius: var(--box-border-radius);
-  width: 100%;
+  width: calc(100% + (var(--page-padding) * 2));
+  margin-left: calc(0em - var(--page-padding));
 }
 
 div.repl iframe {
@@ -226,7 +227,7 @@ div.repl iframe {
 
 div.repl a.new-tab {
   float: right;
-  padding: 2em .5em;
+  padding: 1em 1em;
   font-size: .9em;
   text-decoration: none;
 }
@@ -280,14 +281,7 @@ div.repl a.new-tab {
 
 /* Run Styles */
 
-/* Dismissable cover asking if last step is complete */
-/* To Do - Smoothly scroll to top of Run Repl when revealed */
-#run div.repl.covered > iframe {
-  height: 2em;
-  opacity: 0;
-}
-
-#run div.repl:not(.covered) > iframe {
+#run div.repl > iframe {
   transition: height 1s, opacity 2s;
   height: var(--repl-height);
   opacity: 1;
@@ -295,39 +289,10 @@ div.repl a.new-tab {
 
 #run div.repl > div {
   width: 100%;
-}
-
-#run div.repl.covered > div {
-  background-color: var(--alt-black);
-  border-radius: var(--box-border-radius);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#run .repl.covered a {
-  display: none;
-}
-
-#run div.repl.covered > div:hover {
-  background-color: var(--deeper-black);
-  transition: background-color .5s;
-}
-
-#run div.repl:not(.covered) > div {
   opacity: 0;
   height: 0;
   transition: opacity 1s, height 1s;
   cursor: unset;
-}
-
-#run div.repl > div > p {
-  padding: var(--page-padding);
-  color: var(--run-green);
-  font-family: 'JetBrains Mono', monospace;
-}
-
-#run div.repl:not(.covered) > div > p {
-  display: none;
 }
 
 /* Modify Styles */

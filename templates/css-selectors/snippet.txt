@@ -15,7 +15,7 @@
         <p>This is a blue box with a class selector for a blue box.</p>
     </div>
 
-    <div class="box green">
+    <div class=".box green">
         <p>This is a green box with a class selector for a green box.</p>
     </div>
 

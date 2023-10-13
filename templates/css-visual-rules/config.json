@@ -1,7 +1,7 @@
 {
   "topic": "CSS - Visual Rules",
   "primmEmbedLink": "https://replit.com/team/web-dev-and-js/CSS-Visual-Rules-PRIM",
-  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/CSS-Visual-Rules-Make",
+  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/CSS-Selectors-Make",
   "predict": {
     "snippets": [
       {
@@ -16,8 +16,8 @@
   },
   "make": {
     "requirements": [
-      "use examples that connect to your interests.",
-      "contain comments that explain how the code works."
+      "use a variety of CSS visual rules",
+      "build on your CSS Selectors Make from last week (below)"
     ]
   }
 }

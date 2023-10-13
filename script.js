@@ -13,6 +13,14 @@ let getSnippet = fetch(`${folder}/config.json`)
     loadConfig(config);
   });
 
+// To Do - Introduce Syntax Highlighting
+// function syntaxHighlight() {
+//   let snippets = document.querySelectorAll('.snippet');
+//   snippets.forEach(el => {
+//     hljs.highlightElement(el);
+//   });
+// }
+
 function loadConfig(config) {
   console.log(`Loading ${config.topic}: `, config);
   // Load embedded Replit environments
@@ -33,14 +41,18 @@ function loadConfig(config) {
   let topic = document.querySelector("#topic h2");
   topic.innerHTML = config.topic;
 
-  // Add Make requirements
-  let makeList = document.querySelector("#make ul");
-  // Add explicit requirements before generic requirement, in the order they appear in the list
-  let reqs = config.make.requirements.reverse().forEach((req) => {
-    let item = document.createElement("li");
-    item.innerHTML = req;
-    makeList.insertBefore(item, makeList.firstChild);
-  })
+  // Add Make requirements or skip
+  if (config.make.skip) {
+    document.querySelector("#make").remove();
+  } else {
+    let makeList = document.querySelector("#make ul");
+    // Add explicit requirements before generic requirement, in the order they appear in the list
+    let reqs = config.make.requirements.reverse().forEach((req) => {
+      let item = document.createElement("li");
+      item.innerHTML = req;
+      makeList.insertBefore(item, makeList.firstChild);
+    })
+  }
 };
 
 function loadSnippets(config) {
@@ -66,9 +78,9 @@ function loadSnippet(fileName, snippet) {
   /* TO DO: Check for browser compatibility with template elements
   See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template */
   let snippetContainer = snippetTemplate.content.cloneNode(true);
-  // Add line numbers to snippet 
-  let lineNumber = 1;
-  snippet = snippet.replace(/^/gm, () => `${lineNumber++}.  `);
+  // // Add line numbers to snippet 
+  // let lineNumber = 1;
+  // snippet = snippet.replace(/^/gm, () => `${lineNumber++}.  `);
   // Set snippet text
   let snippetTextArea = snippetContainer.querySelector("textarea");
   snippetTextArea.innerHTML = snippet;

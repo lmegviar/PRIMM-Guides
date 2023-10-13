@@ -8,6 +8,8 @@
     <title>replit</title>
     <!-- Styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- Highlight.js for syntax highlighting-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"> -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;600;800&family=Noto+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
       rel="stylesheet">
     <!-- Scripts -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
     <script defer src="script.js"></script>
   </head>
   
@@ -73,7 +76,7 @@
           <div class="snippet-container">
             <span class="snippet-tab">
             </span>
-            <textarea class="snippet">
+            <textarea disabled class="snippet language-html">
             </textarea>
           </div>
         </template>
@@ -96,15 +99,9 @@
             Play "spot the difference" - small details matter!
           </li>
         </ul>
-        <br>
         <!-- Replit embed of current project -->
-        <div class="repl covered" id="run-repl">
+        <div class="repl" id="run-repl">
           <a href="" target="_blank" class="new-tab"> Open in new tab <span class="icon"> ❐</span></a>
-          <div onclick="removeClass('#run-repl', 'covered')">
-            <p>
-              <span class="icon">» </span>
-              Click here to see the program once when you've completed the 🔮 <span class="predict">Predict</span> step.</p>
-          </div>
           <iframe loading="lazy" height="800px" src=""></iframe>
         </div>
       </section>
@@ -115,7 +112,7 @@
         <!-- Prompt -->
         <ul>
           <li>
-            Choose <em>4</em> of the questions in the <code>investigate.txt</code> file in the <a href="#run">Repl above</a>.
+            Choose <em>4</em> of the questions in the <code>investigate.txt</code> file in the <a href="#run-repl">Repl above</a>.
           </li>
           <li>
             Investigate with a partner or small group and record your answers in the file.
@@ -129,7 +126,7 @@
         <h1>🔧 Modify</h1>
         <ul>
           <li>
-            Choose <em>at least</em> 4 of the modifications in the <code>modifications.txt</code> file in <a href="#run">the Repl</a> from the ⚙️ <span class="run">Run</span> step.
+            Choose <em>at least</em> 4 of the modifications in the <code>modifications.txt</code> file in <a href="#run-repl">the Repl</a> from the ⚙️ <span class="run">Run</span> step.
           </li>
           <li>
               If you have a partner, pair program by trading off driving and navigating with each modification.
@@ -147,7 +144,7 @@
         <p >Your code should:</p>
         <ul>
           <li>
-            be at least as complex as the <a href="#run">program you modified</a> above.
+            be at least as complex as the <a href="#run-repl">program you modified</a> above.
             <br><em>Stuck? Look back at that program as an example.</em>
           </li>
         </ul>
