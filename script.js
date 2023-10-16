@@ -1,3 +1,6 @@
+// To Do - add syntax highlighting for predict
+// https://stackoverflow.com/questions/54277438/how-to-connect-prism-js-to-textarea
+
 /* Load lesson configuration */
 
 // Determine which lesson to show based on query param
@@ -12,14 +15,6 @@ let getSnippet = fetch(`${folder}/config.json`)
     let config = JSON.parse(text);
     loadConfig(config);
   });
-
-// To Do - Introduce Syntax Highlighting
-// function syntaxHighlight() {
-//   let snippets = document.querySelectorAll('.snippet');
-//   snippets.forEach(el => {
-//     hljs.highlightElement(el);
-//   });
-// }
 
 function loadConfig(config) {
   console.log(`Loading ${config.topic}: `, config);
