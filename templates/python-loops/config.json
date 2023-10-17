@@ -12,7 +12,9 @@
   },
   "make": {
     "requirements": [
-      "use examples that connect to your interests.",
+      "use at least one while and one for loop",
+      "use the 'break' and/or 'continue' keywords",
+      "use the 'range' function (optional)",
       "contain comments that explain how the code works."
     ]
   }
