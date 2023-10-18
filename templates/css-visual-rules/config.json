@@ -17,7 +17,8 @@
   "make": {
     "requirements": [
       "use a variety of CSS visual rules",
-      "build on your CSS Selectors Make from last week (below)"
+      "build on your CSS Selectors Make from last week (below)",
+      "Include a share link to a mockup of your design <!-- as a comment in your Make’s html file -->"
     ]
   }
 }
