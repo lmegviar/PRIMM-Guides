@@ -1,0 +1,21 @@
+{
+  "topic": "Python Loops - Pt. 2",
+  "primmEmbedLink": "https://replit.com/team/python-viar/Loops-Pt-2-PRIM",
+  "makeEmbedLink": "https://replit.com/team/python-viar/Loops-Pt-2-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "main.py",
+        "path": "main.py"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "contain at least two loops",
+      "include iterating through a list of items",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

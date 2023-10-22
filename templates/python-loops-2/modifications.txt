@@ -1,0 +1,24 @@
+----- [DIRECTIONS] -----
+Complete 4+ of the modifications using pair programming.
+
+Replace the item number with "D" for those your drive for, and an "N" for those you navigate.
+
+Partner Name:
+------------------------
+
+[1] Display Item Availability: Add a message indicating the availability of each item (e.g., "In stock" or "Out of stock).
+
+[2] Display Total Cost: Calculate and display the total cost of the items purchased.
+
+[3] Implement a 'Restock' Option: Add an option to restock the vending machine items. Let the user enter the quantity to add.
+
+[4] Implement a Discount Option: Add an option for the user to enter a discount code, which can reduce the item prices.
+
+[5] Create a Sales Report: Keep track of the sales and generate a sales report at the end, showing the items sold and their quantities.
+
+[6] Implement a Refund Option: Allow the user to return an item and get a refund.
+
+[7] Change the Stock Management: Modify the code to use a list of dictionaries to manage items, with more attributes like expiration date, brand, etc.
+
+[8] DESIGN YOUR OWN MOD! - Come up with a modification for the program.
+    > Write the requirements below and then make your changes in Python:

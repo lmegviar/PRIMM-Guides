@@ -1,0 +1,3 @@
+Complete comments with the ✍️ emoji in index.html and script.js.
+
+Your comments should explain what the line after if does in your own words.
