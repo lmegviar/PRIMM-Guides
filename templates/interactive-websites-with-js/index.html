@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <script>      
+      // Create a variable
+      var currentPlayer = 'X';
+      // Create a function that accepts a cell as an argument
+      function place(cell) {
+          // Only mark the cell if it's empty
+          if (cell.innerHTML === '') {
+              cell.innerHTML = currentPlayer;
+              if (currentPlayer ==  'X') {
+                currentPlayer = 'O'
+              } else {
+                currentPlayer = 'X';
+              }
+          }
+      }
+    </script>
+  
+    <style>
+        /* This is a style element containing CSS */
+        table, th, td {
+            border: 2px solid #ccc;
+        }
+        th, td {
+            /* Style X and O text */
+            color: red;
+            font-size: 2em;
+            font-family: sans-serif;
+            font-weight: 600;
+            /* Style cell box */
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- the onclick attribute allows you to specify a function to run when the element is clicked -->
+            <td onclick="place(this)"></td>
+            <!-- "this" is the td element clicked -->
+            <td onclick="place(this)"></td>
+            <td onclick="place(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="place(this)"></td>
+            <td onclick="place(this)"></td>
+            <td onclick="place(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="place(this)"></td>
+            <td onclick="place(this)"></td>
+            <td onclick="place(this)"></td>
+        </tr>
+    </table>
+</body>
+</html>

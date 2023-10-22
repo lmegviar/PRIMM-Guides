@@ -1,0 +1,22 @@
+{
+  "topic": "Interactive Websites with JavaScript",
+  "primmEmbedLink": "https://replit.com/team/web-dev-and-js/JavaScript-and-the-DOM-PRIM",
+  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/JavaScript-and-the-DOM-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "index.html",
+        "path": "index.html"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "use the onclick attribute.",
+      "create and use at least one variable.",
+      "change the content of HTML elements based on use interactions.",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}

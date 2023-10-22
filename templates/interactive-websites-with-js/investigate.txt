@@ -1,0 +1,15 @@
+----- [DIRECTIONS] -----
+Complete the tasks below with the help of a partner.
+
+Partner Name:
+------------------------
+
+TASK: Complete the six "TO DO" comments in main.py by writing an explanation of the code following each comment.
+
+Explain how the code works AND how it contributes to the overall program.
+
+HINT: Click into "intro.html", click CTRL + F, and search for "TO DO".
+
+------------------------
+
+DONE EARLY? Add additional comments explaining other parts of the program.

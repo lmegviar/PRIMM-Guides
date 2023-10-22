@@ -12,8 +12,8 @@
   },
   "make": {
     "requirements": [
-      "contain at least two loops",
-      "include iterating through a list of items",
+      "contain at least two loops.",
+      "include iterating through a list of items.",
       "use examples that connect to your interests.",
       "contain comments that explain how the code works."
     ]
