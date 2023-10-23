@@ -16,7 +16,7 @@ while try_again:
     print(f"{index}. {name} (${price})")
   choice = int(input("Please enter the number of the item you want to buy.\n"))
 
-  if 0 <= choice <= len(items):
+  if 0 <= choice < len(items):
     item = items[choice]
     name, price, stock = item
     if stock > 0:
