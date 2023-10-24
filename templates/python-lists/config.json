@@ -1,0 +1,22 @@
+{
+  "topic": "Python Lists",
+  "primmEmbedLink": "https://replit.com/team/python-viar/Lists-PRIM",
+  "makeEmbedLink": "https://replit.com/team/python-viar/Lists-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "main.py",
+        "path": "main.py"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "contain at least two lists.",
+      "include iterating through a list of items.",
+      "update item(s) in a list.",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}
