@@ -11,6 +11,7 @@
     ]
   },
   "make": {
+    "skip": true,
     "requirements": [
       "use the onclick attribute.",
       "create and use at least one variable.",

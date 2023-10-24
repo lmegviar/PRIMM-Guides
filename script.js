@@ -38,7 +38,8 @@ function loadConfig(config) {
 
   // Add Make requirements or skip
   if (config.make.skip) {
-    document.querySelector("#make").remove();
+    document.querySelector("#make").innerHTML = "No make this time!";
+    
   } else {
     let makeList = document.querySelector("#make ul");
     // Add explicit requirements before generic requirement, in the order they appear in the list

@@ -1,0 +1,21 @@
+{
+  "topic": "JavaScript Variables",
+  "primmEmbedLink": "https://replit.com/team/web-dev-and-js/JS-Variables-PRIM",
+  "makeEmbedLink": "https://replit.com/team/web-dev-and-js/JS-Variables-Make",
+  "predict": {
+    "snippets": [
+      {
+        "displayName": "index.js",
+        "path": "index.js"
+      }
+    ]
+  },
+  "make": {
+    "requirements": [
+      "Include user input.",
+      "Make and use variables.",
+      "use examples that connect to your interests.",
+      "contain comments that explain how the code works."
+    ]
+  }
+}
