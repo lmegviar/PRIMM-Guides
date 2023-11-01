@@ -13,10 +13,10 @@
   "make": {
     "requirements": [
       "contain at least two lists.",
-      "include iterating through a list of items.",
+      "include iterating through a list of items using a loop.",
       "update item(s) in a list.",
-      "use examples that connect to your interests.",
-      "contain comments that explain how the code works."
+      "contain comments that explain how the code works.",
+      "reflect 2x the effort of a typical Make (you'll have 2 weeks to complete it)."
     ]
   }
 }
